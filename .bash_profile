@@ -1,6 +1,7 @@
 
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 
+alias rep="cd ~/repositories"
 export GRADLE_OPTS="-Dorg.gradle.daemon=true"
 alias jmeter="/usr/lib/apache-jmeter-2.9/bin/jmeter.sh"
 alias outlook="open -a \"/Applications/Microsoft Office 2011/Microsoft Outlook.app\""
