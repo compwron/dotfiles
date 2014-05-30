@@ -1,4 +1,4 @@
-
+alias loc="find . -name "*" -print | xargs wc -l"
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 
 alias rep="cd ~/repositories"
