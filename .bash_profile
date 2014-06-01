@@ -36,6 +36,7 @@ alias gaa="git add . && git add -A"
 alias gre="git reset HEAD --hard"
 alias log="git log --pretty=format:'%Cgreen%ad%Creset %C(yellow)%h%Creset%C(yellow)%d%Creset %s %C(cyan)[%an]%Creset %Cred(%ar)%Creset' --date=short --graph"
 alias st="git status"
+alias gfile="git show --name-only"
 
 alias report="pairsee -r . -c ../pairSeeConfig.yml -a 2014-2-1 >> linda.txt ; pairsee -r . -c ../pairSeeConfig.yml -a 2014-2-1 -d >> linda.txt ; pairsee -r . -c ../pairSeeConfig.yml -a 2014-2-1 -s >> linda.txt"
 
