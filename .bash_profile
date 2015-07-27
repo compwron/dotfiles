@@ -1,23 +1,7 @@
-function bt-tmux-start {
-  tmux -S /tmp/$1 new-session -s $1 -d
-  chmod 777 /tmp/$1
-  tmux -S /tmp/$1 attach -t $1
-}
+export GREP_OPTIONS='--color=auto'
 
-function bt-tmux-list {
-  ps -eo ruser,command | grep '[n]ew-session -s' | ruby -ne '$_ =~ /^(\w+).*-s (\w+)/; puts "#{$1} started #{$2}"'
-}
-
-function bt-make-tmux-public() {
-  if [ -z "$TMUX" ]; then
-    echo "must be run from inside tmux with \$TMUX set"
-  else
-    tmux_socket=$(echo $TMUX | cut -d',' -f1)
-    chmod 777 $tmux_socket
-    tmux refresh-client -S
-  fi
-}
-
+alias bi="bundle install"
+alias utc="sudo ln -sf /usr/share/zoneinfo/UTC /etc/localtime"
 alias agent="eval `ssh-agent`"
 alias s="open -a /Applications/Sublime\ Text.app/ "
 export PS1="\h:\w$ "
@@ -48,7 +32,7 @@ alias gitloc="git ls-files | xargs wc -l"
 alias untar="tar -zxvf "
 alias tarthis="tar -pczf "
 alias updatedb="/usr/libexec/locate.updatedb"
-alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\   -f2" 
+alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\   -f2"
 alias news="wget -O - hackurls.com/ascii"
 alias psa="ps aux | grep -i "
 alias pug="ps aux | grep -i "
@@ -62,5 +46,16 @@ alias path='echo -e ${PATH//:/\\n}' # view $PATH with linebreaks
 alias rep="cd ~/repositories"
 
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
+
+# history handling
+#
+# Erase duplicates
+export HISTCONTROL=erasedups
+# resize history size
+export HISTSIZE=5000
+# append to bash_history if Terminal.app quits
+shopt -s histappend
+# $PROMPT_COMMAND;history -a; history -n # from http://superuser.com/questions/37576/can-history-files-be-unified-in-bash
+
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
