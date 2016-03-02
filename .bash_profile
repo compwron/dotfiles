@@ -1,3 +1,42 @@
+alias wifion="networksetup -setairportpower airport on"
+alias wifioff="networksetup -setairportpower airport off"
+alias wifipassof="security find-generic-password -wa "
+alias savednetworks="read /Library/Preferences/SystemConfiguration/com.apple.airport.preferences | grep SSIDString"
+alias wifis="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport scan"
+
+if [ -d "<path-to-sdk>/platform-tools" ] ; then
+  export PATH="<path-to-sdk>/platform-tools:$PATH"
+fi
+
+alias note="s ~/repositories/notes/note.txt"
+alias and="s /Users/compwron/repositories/compwron.github.io/andconf.txt"
+
+# eval "$(rbenv init -)"
+alias mute="sudo osascript -e 'set Volume 0'"
+alias chat="echo 'yeah you should implement that'"
+# ompwron:~/repositories/compwron.github.io$ calendar
+# calendar: can't open calendar file "calendar": No such file or directory (2)
+# compwron:~/repositories/compwron.github.io$ cal
+#      April 2015
+# Su Mo Tu We Th Fr Sa
+#           1  2  3  4
+#  5  6  7  8  9 10 11
+# 12 13 14 15 16 17 18
+# 19 20 21 22 23 24 25
+# 26 27 28 29 30
+
+# compwron:~/repositories/compwron.github.io$ which cal
+# /usr/bin/cal
+# compwron:~/repositories/compwron.github.io$ cal -h
+# cal: illegal option -- h
+# usage: cal [-jy] [[month] year]
+#        cal [-j] [-m month] [year]
+#        ncal [-Jjpwy] [-s country_code] [[month] year]
+#        ncal [-Jeo] [year]
+# compwron:~/repositories/compwron.github.io$
+
+alias pos="cd ~/bc/pos-service"
+
 function bt-tmux-start {
   tmux -S /tmp/$1 new-session -s $1 -d
   chmod 777 /tmp/$1
@@ -20,7 +59,7 @@ function bt-make-tmux-public() {
 
 alias agent="eval `ssh-agent`"
 alias s="open -a /Applications/Sublime\ Text.app/ "
-export PS1="\h:\w$ "
+export PS1="compwron:\w$ "
 source ~/bt/system-scripts/pairing_stations/aliases
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOPATH/bin"
@@ -48,7 +87,7 @@ alias gitloc="git ls-files | xargs wc -l"
 alias untar="tar -zxvf "
 alias tarthis="tar -pczf "
 alias updatedb="/usr/libexec/locate.updatedb"
-alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\   -f2" 
+alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\   -f2"
 alias news="wget -O - hackurls.com/ascii"
 alias psa="ps aux | grep -i "
 alias pug="ps aux | grep -i "
@@ -64,3 +103,15 @@ alias rep="cd ~/repositories"
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+
+
+# history handling
+#
+# Erase duplicates
+export HISTCONTROL=erasedups
+# resize history size
+export HISTSIZE=5000
+# append to bash_history if Terminal.app quits
+shopt -s histappend
+# $PROMPT_COMMAND;history -a; history -n # from http://superuser.com/questions/37576/can-history-files-be-unified-in-bash
