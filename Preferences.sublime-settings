@@ -1,18 +1,9 @@
 {
 	"auto_complete": true,
 	"auto_complete_commit_on_tab": true,
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"copy_with_empty_selection": true,
 	"ensure_newline_at_eof_on_save": true,
-<<<<<<< HEAD
-	"font_size": 14,
-=======
-	"font_size": 15,
->>>>>>> 49db1af3352469fc3da4528d7143412de533891d
-	"ignored_packages":
-	[
-		"Vintage"
-	],
+	"font_size": 13,
 	"index_files": true,
 	"rulers":
 	[
@@ -20,20 +11,8 @@
 	],
 	"run_on_save": true,
 	"show_full_path": true,
-	"syntaxes":
-	[
-		{
-			"extensions":
-			[
-				"hbs.html"
-			],
-			"name": "Handlebars/Handlebars"
-		}
-	],
-	"tab_size": 2,
-	"theme": "Soda Dark 3.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
 	"spell_check": true,
-	"dictionary": "Packages/Language - English/en_US.dic"
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
 }

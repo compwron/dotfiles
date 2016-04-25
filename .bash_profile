@@ -13,33 +13,10 @@ export NVM_DIR="/Users/lgoldstein/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
-alias brep="cd ~/bc/breadcrumb-reports"
 alias be="bundle exec "
-alias opentable="rep ; cd notes ; s opentable_notes.txt"
 alias branch="git for-each-ref --sort=-committerdate refs/heads/ | head"
 
-alias bspec="rspec ./spec/jobs/background_bootstrap_spec.rb && rspec ./spec/integration/api/v1/venues_spec.rb && rspec ./spec/integration/api/v1/restaurants_spec.rb:353"
-# pos-service
-alias uat="cd ~/bc/mos-deploy && git pull && bin/cap pos-service:app:uat console:rails"
-alias uatshell="cd ~/bc/mos-deploy && git pull && bin/cap pos-service:app:uat console:shell"
-alias perf="cd ~/bc/mos-deploy && git pull && bin/cap pos-service:app:perf console:rails"
-alias perfshell="cd ~/bc/mos-deploy && git pull && bin/cap pos-service:app:perf console:shell"
-alias perfmysql="cd ~/bc/mos-deploy && git pull && bin/cap pos-service:app:perf console:mysql"
-alias perf2="cd ~/bc/mos-deploy && git pull && bin/cap pos-service:app:perf2 console:rails"
-alias perfshell2="cd ~/bc/mos-deploy && git pull && bin/cap pos-service:app:perf2 console:shell"
-alias staging="cd ~/bc/mos-deploy && git pull && bin/cap pos-service:app:staging console:rails"
-alias stagingshell="cd ~/bc/mos-deploy && git pull && bin/cap pos-service:app:staging console:shell"
-alias production="cd ~/bc/mos-deploy && git pull && bin/cap pos-service:app:production console:rails"
-alias productionshell="cd ~/bc/mos-deploy && git pull && bin/cap pos-service:app:production console:shell"
-
-# alias bcmr='mysql.server stop && mysql.server start --sql-mode="NO_ENGINE_SUBSTITUTION"' # does not work - maybe the quotes are wrong?
-# alias bcmss='mysql.server start --sql-mode="NO_ENGINE_SUBSTITUTION"' # does not work - maybe the quotes are wrong?
-
-alias badtest="cd ~/repositories/notes ; s badtests.txt ; cd -"
-alias note="cd ~/repositories/notes ; s bar.txt ; cd -"
-alias outage="cd ~/repositories/notes ; s linda_outage_playbook.txt ; cd -"
-alias oldnote="cd ~/repositories/notes ; s old_bar.txt ; cd -"
-alias pnote="cd ~/repositories/notes ; s pos-note.txt ; cd -"
+alias note="cd ~/repositories/notes ; s notes.txt ; cd -"
 
 # breadcrumb database migration switch branches etc
 alias bcmig='time bundle exec rake db:migrate db:test:prepare && bundle exec rake parallel:drop parallel:create parallel:prepare && bundle exec rake simplecov'
@@ -121,11 +98,5 @@ export HISTSIZE=5000
 # append to bash_history if Terminal.app quits
 shopt -s histappend
 # $PROMPT_COMMAND;history -a; history -n # from http://superuser.com/questions/37576/can-history-files-be-unified-in-bash
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/lgoldstein/google-cloud-sdk/path.bash.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/Users/lgoldstein/google-cloud-sdk/completion.bash.inc'
 
 
