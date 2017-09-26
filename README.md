@@ -19,5 +19,11 @@ Manual:
 Sublime setup:
 https://packagecontrol.io/installation
 
-Commandline: zsh, nvm, rvm, tree, cloc, redis, postgres, brew
-Apps: caffiene, spectacle, dropbox, evernote, Sublime, 1Pass, CCMenu, Docker, Flux, Zoom, ScreenHero, Slack, Xcode, ....
+Leaf.app
+Intellij install with license
+Add license to Sublime
+Dash license and libraries download (ruby, java, golang, groovy, stackoverflow...)
+
+also copy over wifi passwords
+
+

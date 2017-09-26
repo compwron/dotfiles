@@ -15,6 +15,17 @@
   oneline = log --pretty=format:\"%h %ad%x20%s%x20%x28%an%x29\" --date=short
   current = log --pretty=format:'%ad %h %d' --abbrev-commit --date=short -1
   cur = log --pretty=format:'%ad %h %d' --abbrev-commit --date=short -1
+  dc = diff --cached
+  cm = commit
+  logn = log --no-merges
+  lol = log --oneline
+  loln = log --oneline --no-merges
+  logng = log --no-merges | grep -A4
+  pr = pull --rebase
+  amend = commit --amend --no-edit
+  b = branch
+  lg = log --graph --pretty=format:'%Cred%h%Creset - %C(bold red)%an%Creset -%Creset(bold yellow)%d%Creset %s %C(bold green)(%cr)%Creset' --abbrev-commit --date=relative -20
+  ci = commit
 
   # show difference between the HEAD and the index
   staged = diff --cached
@@ -32,7 +43,7 @@
 	excludesfile = /Users/lgoldstein/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
