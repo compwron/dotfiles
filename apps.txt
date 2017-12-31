@@ -1,0 +1,101 @@
+1Password 6.app
+Alfred 3.app
+Amazon Music.app
+Android Studio.app
+App Store.app
+Arq.app
+Atom.app
+Automator.app
+Beam.app
+Caffeine.app
+Calculator.app
+Calendar.app
+calibre.app
+CCMenu.app
+Chess.app
+Cisco
+Clipboard Guru - History and Snippet manager.app
+coconutBattery.app
+Contacts.app
+Contour Storyteller.app
+DaisyDisk.app
+Dash.app
+Dashboard.app
+Dictionary.app
+Discord.app
+Docker.app
+Dropbox.app
+DVD Player.app
+Evernote.app
+FaceTime.app
+Firefox.app
+Flux.app
+Font Book.app
+Fuze_df4c9716.app
+Fuze.app
+Game Center.app
+Gifox.app
+Google Chrome.app
+Google Drive.app
+GoToMeeting
+GPG Keychain.app
+iBooks.app
+Image Capture.app
+IntelliJ IDEA.app
+iStat Menus.app
+iTerm.app
+KeePassX.app
+Keynote.app
+Kindle.app
+Launchpad.app
+Leaf.app
+LibreOffice.app
+Mail.app
+Maps.app
+MDB ACCDB Viewer.app
+MDB Explorer.app
+Messages.app
+Messenger.app
+Microsoft Excel.app
+Microsoft OneNote.app
+Microsoft Outlook.app
+Microsoft PowerPoint.app
+Microsoft Word.app
+Mission Control.app
+Music Manager.app
+Notes.app
+Opera Neon.app
+Photo Booth.app
+Photos.app
+Preview.app
+QuickTime Player.app
+Reminders.app
+RescueTime.app
+Safari.app
+Screenhero.app
+Screenhero.dmg
+SketchUp 2017
+Slack.app
+Spectacle.app
+Spotify.app
+Steam.app
+Stickies.app
+Sublime Text.app
+System Preferences.app
+TextEdit.app
+Time Machine.app
+Tomighty.app
+TweetDeck.app
+Utilities
+VirtualBox.app
+Visual Studio (old).app
+Visual Studio Code.app
+Visual Studio.app
+VLC.app
+VMware Horizon Client.app
+WeChat.app
+Xamarin Profiler.app
+Xamarin Workbooks.app
+Xcode.app
+zoom.us.app
+zoomusLauncher.app
