@@ -24,13 +24,6 @@ brew cask install dropbox
 brew cask install evernote
 brew cask install sublime-text
 #ln -s $(pwd)/Preferences.sublime-settings "/Users/$(whoami)/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
-brew cask install ccmenu
 brew cask install flux
-brew cask install zoom
-brew cask install screenhero
-
-brew install boot2docker #docker docker-compose docker-machine xhyve docker-machine-driver-xhyve
-
-
 
 #Apps: caffiene, spectacle, dropbox, evernote, Sublime, 1Pass, CCMenu, Docker, Flux, Zoom, ScreenHero, Slack, Xcode, ....

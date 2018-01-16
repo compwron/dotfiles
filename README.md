@@ -6,7 +6,7 @@ Make it easier to switch laptops and bringmy config with me
 
 ## Usage
 
-Getting ready to move laptops: 
+Getting ready to move laptops:
     ./ready_for_move.sh
     git add .
     git commit -m "ready for move"
@@ -15,15 +15,12 @@ Getting ready to move laptops:
 On new laptop:
     ./setup.sh
 
-Manual:
-Sublime setup:
-https://packagecontrol.io/installation
+To create phone ringtone/notification noises:
 
-Leaf.app
-Intellij install with license
-Add license to Sublime
-Dash license and libraries download (ruby, java, golang, groovy, stackoverflow...)
-
-also copy over wifi passwords
-
-
+- brew install youtube-dl
+- youtube-dl <link>
+- In VLC, File > Convert/Stream > to mp3
+- upload to google drive
+- on phone, open google drive, download file
+- on phone, move file to Ringtones folder
+- Settings > Sound > etc
